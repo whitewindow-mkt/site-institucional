@@ -104,9 +104,9 @@
   /* HERO */
   .hero{
     min-height:100vh;
-    display:flex;flex-direction:column;justify-content:center;
+    display:flex;flex-direction:column;justify-content:flex-start;
     position:relative;
-    padding-top:88px;padding-bottom:64px;
+    padding-top:130px;padding-bottom:40px;
     background:
       radial-gradient(ellipse 900px 500px at 85% 10%, rgba(255,106,0,0.16), transparent 60%),
       radial-gradient(ellipse 700px 500px at 10% 90%, rgba(255,196,0,0.10), transparent 60%);
@@ -114,16 +114,16 @@
   .eyebrow{
     display:inline-flex;align-items:center;gap:8px;
     font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
-    color:var(--amarelo);margin-bottom:26px;
+    color:var(--amarelo);margin-bottom:28px;
   }
   .eyebrow::before{content:'';width:8px;height:8px;background:var(--laranja);border-radius:50%;}
   h1{
-    font-size:clamp(28px, 4.3vw, 58px);
+    font-size:clamp(30px, 5vw, 68px);
     font-weight:800;
     line-height:1.08;
-    letter-spacing:-1.2px;
+    letter-spacing:-1.4px;
     text-transform:uppercase;
-    max-width:1100px;
+    max-width:1300px;
     white-space:nowrap;
   }
   h1 .accent{
@@ -131,7 +131,7 @@
     -webkit-background-clip:text;background-clip:text;color:transparent;
   }
   .hero-sub{
-    margin-top:28px;
+    margin-top:40px;
     font-size:clamp(11px,1.05vw,15px);
     color:#c9c7c0;
     max-width:none;
@@ -140,8 +140,10 @@
     white-space:nowrap;
   }
   .hero-cta-row{
-    margin-top:40px;display:flex;gap:14px;flex-wrap:wrap;align-items:center;
+    margin-top:56px;display:flex;gap:14px;flex-wrap:wrap;align-items:center;
   }
+  .hero .wrap{display:flex;flex-direction:column;flex:1;}
+  .hero-stats.hero-stats-pinned{margin-top:auto;padding-top:32px;}
   .btn-primary{
     background:var(--amarelo);color:var(--preto);
     padding:13px 24px;border-radius:999px;
@@ -331,7 +333,7 @@
       <a class="btn-primary" href="https://wa.me/5548996203352?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20White%20Window%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Agendar diagnóstico →</a>
       <a class="btn-ghost" href="#servicos">Ver o que entregamos</a>
     </div>
-    <div class="hero-stats">
+    <div class="hero-stats hero-stats-pinned">
       <div class="stat"><b>360°</b><span>Marketing digital completo</span></div>
       <div class="stat"><b>100+</b><span>Marcas atendidas</span></div>
       <div class="stat"><b>IA</b><span>Automatizando cada etapa</span></div>
