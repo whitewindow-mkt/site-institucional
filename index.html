@@ -118,12 +118,13 @@
   }
   .eyebrow::before{content:'';width:8px;height:8px;background:var(--laranja);border-radius:50%;}
   h1{
-    font-size:clamp(32px, 5vw, 68px);
+    font-size:clamp(28px, 4.3vw, 58px);
     font-weight:800;
-    line-height:1.04;
-    letter-spacing:-1.5px;
+    line-height:1.08;
+    letter-spacing:-1.2px;
     text-transform:uppercase;
-    max-width:980px;
+    max-width:1100px;
+    white-space:nowrap;
   }
   h1 .accent{
     background:linear-gradient(90deg, var(--amarelo), var(--laranja));
@@ -308,6 +309,7 @@
     .wrap{padding:0 20px;}
     .flow{grid-template-columns:1fr;}
     .flow-arrow{transform:rotate(90deg);padding:6px 0;}
+    h1{white-space:normal;}
   }
 </style>
 </head>
