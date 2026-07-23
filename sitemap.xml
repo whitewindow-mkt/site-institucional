@@ -55,4 +55,34 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://whitewindow.com.br/blog/ia-e-decisao-humana-no-marketing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://whitewindow.com.br/blog/quanto-custa-agencia-marketing-digital-com-ia/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://whitewindow.com.br/blog/geo-como-ser-citado-por-ia/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://whitewindow.com.br/blog/como-escolher-agencia-marketing-digital/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://whitewindow.com.br/blog/automacao-de-marketing-e-crm/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://whitewindow.com.br/blog/criativos-com-inteligencia-artificial/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
