@@ -243,9 +243,10 @@
   .service{
     padding:48px 40px;border:1px solid rgba(255,255,255,0.08);
     position:relative;overflow:hidden;
-    transition:background .2s ease;
+    background:linear-gradient(155deg, #131313 0%, var(--preto) 55%, #0d0d0d 100%);
+    transition:background .2s ease, border-color .2s ease;
   }
-  .service:hover{background:rgba(255,196,0,0.04);}
+  .service:hover{border-color:rgba(255,196,0,0.35);background:linear-gradient(155deg, #171310 0%, var(--preto) 55%, #100b04 100%);}
   .service .tag{
     display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;
     color:var(--preto);background:var(--amarelo);padding:5px 10px;border-radius:4px;
@@ -413,7 +414,7 @@
   </div>
 </section>
 
-<section class="section" id="servicos">
+<section class="section promise" id="servicos">
   <div class="wrap">
     <div class="label">O que entregamos</div>
     <h2>Marketing digital completo,<br>uma agência só.</h2>
@@ -484,7 +485,7 @@
   </div>
 </section>
 
-<section class="process section">
+<section class="section">
   <div class="wrap">
     <div class="label">Nosso processo</div>
     <h2>Do diagnóstico à operação no ar</h2>
@@ -521,7 +522,7 @@
   </div>
 </section>
 
-<section class="section" id="faq">
+<section class="section promise" id="faq">
   <div class="wrap">
     <div class="label">Perguntas frequentes</div>
     <h2>Sobre marketing digital com IA</h2>
