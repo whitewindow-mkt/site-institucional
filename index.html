@@ -86,7 +86,7 @@
     position:fixed;top:0;left:0;right:0;z-index:100;
     display:flex;align-items:center;justify-content:space-between;
     padding:22px 32px;
-    background:rgba(10,10,10,0.75);
+    background:rgba(10,10,10,0.94);
     backdrop-filter:blur(10px);
     border-bottom:1px solid rgba(255,255,255,0.06);
   }
@@ -106,6 +106,7 @@
     min-height:100vh;
     display:flex;flex-direction:column;justify-content:flex-start;
     position:relative;
+    overflow:hidden;
     padding-top:130px;padding-bottom:40px;
     background:
       radial-gradient(ellipse 900px 600px at 85% 0%, rgba(0,0,0,0.14), transparent 60%),
@@ -126,7 +127,8 @@
     text-transform:uppercase;
     max-width:1300px;
     white-space:nowrap;
-    color:var(--preto);
+    background:linear-gradient(180deg, #1a1a1a 0%, #000000 55%, #2b1400 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
   }
   .hero h1 .accent{
     background:none;-webkit-background-clip:unset;background-clip:unset;
@@ -174,13 +176,17 @@
     border-top:1px solid rgba(255,255,255,0.1);
     padding-top:28px;
   }
-  .hero .hero-stats{border-top:1px solid rgba(10,10,10,0.2);}
+  .hero .hero-stats-pinned{
+    border-top:none;
+    box-shadow:0 0 0 100vmax var(--preto);
+    position:relative;
+  }
   .stat b{
     display:block;font-size:clamp(20px,2.4vw,30px);font-weight:800;color:var(--branco);
   }
   .stat span{font-size:11px;color:var(--cinza);text-transform:uppercase;letter-spacing:1px;}
-  .hero .stat b{color:var(--preto);}
-  .hero .stat span{color:rgba(10,10,10,0.6);}
+  .hero .hero-stats-pinned .stat b{color:var(--branco);}
+  .hero .hero-stats-pinned .stat span{color:var(--cinza);}
 
   /* SECTION LABEL */
   .section{padding:120px 0;}
@@ -347,7 +353,7 @@
 
 <section class="hero">
   <div class="wrap">
-    <div class="eyebrow">White Window · Agência de Marketing Digital com IA</div>
+    <div class="eyebrow">White Window · Agência de Marketing Digital e Inteligência Artificial</div>
     <h1>Marketing digital com<br><span class="accent">inteligência artificial</span><br>Vende muito mais.</h1>
     <p class="hero-sub">Branding · Estratégia · Conteúdo · Meta Ads · Google Ads · Landing Pages · Atendimento com IA — Funil Completo em uma única Agência.</p>
     <div class="hero-cta-row">
