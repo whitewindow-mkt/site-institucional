@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>White Window — Marketing Digital e Inteligência Artificial</title>
+<meta name="description" content="White Window: agência de marketing digital com inteligência artificial aplicada. Tráfego pago, conteúdo e automação que elevam qualidade e produtividade dos seus resultados.">
+<meta property="og:title" content="White Window — Marketing Digital e Inteligência Artificial">
+<meta property="og:description" content="Soluções de marketing digital com IA aplicada que elevam a qualidade e a produtividade dos resultados da sua marca.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://whitewindow.com.br/">
+<meta name="robots" content="index, follow">
+<style>
+  :root{
+    --preto:#0a0a0a;
+    --preto2:#141414;
+    --amarelo:#FFC400;
+    --laranja:#FF6A00;
+    --branco:#F7F5F0;
+    --cinza:#8a8a8a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--preto);
+    color:var(--branco);
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    overflow-x:hidden;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+
+  /* NAV */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:22px 32px;
+    background:rgba(10,10,10,0.75);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+  }
+  .logo{font-weight:800;font-size:18px;letter-spacing:0.5px;}
+  .logo span{color:var(--amarelo);}
+  .nav-cta{
+    background:var(--amarelo);color:var(--preto);
+    padding:11px 22px;border-radius:999px;
+    font-weight:700;font-size:13px;text-decoration:none;
+    letter-spacing:0.3px;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .nav-cta:hover{background:var(--laranja);color:var(--preto);transform:translateY(-1px);}
+
+  /* HERO */
+  .hero{
+    min-height:100vh;
+    display:flex;flex-direction:column;justify-content:center;
+    position:relative;
+    padding-top:100px;padding-bottom:80px;
+    background:
+      radial-gradient(ellipse 900px 500px at 85% 10%, rgba(255,106,0,0.16), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 10% 90%, rgba(255,196,0,0.10), transparent 60%);
+  }
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+    color:var(--amarelo);margin-bottom:28px;
+  }
+  .eyebrow::before{content:'';width:8px;height:8px;background:var(--laranja);border-radius:50%;}
+  h1{
+    font-size:clamp(40px, 6.4vw, 92px);
+    font-weight:800;
+    line-height:0.98;
+    letter-spacing:-2px;
+    text-transform:uppercase;
+    max-width:1000px;
+  }
+  h1 .accent{
+    background:linear-gradient(90deg, var(--amarelo), var(--laranja));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero-sub{
+    margin-top:28px;
+    font-size:clamp(16px,2vw,20px);
+    color:#c9c7c0;
+    max-width:600px;
+    line-height:1.55;
+    font-weight:400;
+  }
+  .hero-cta-row{
+    margin-top:44px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;
+  }
+  .btn-primary{
+    background:var(--amarelo);color:var(--preto);
+    padding:18px 34px;border-radius:999px;
+    font-weight:800;font-size:15px;text-decoration:none;
+    letter-spacing:0.3px;
+    display:inline-flex;align-items:center;gap:10px;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    box-shadow:0 0 0 rgba(255,196,0,0);
+  }
+  .btn-primary:hover{background:var(--laranja);transform:translateY(-2px);box-shadow:0 10px 30px rgba(255,106,0,0.35);}
+  .btn-ghost{
+    color:var(--branco);text-decoration:none;font-weight:600;font-size:14px;
+    padding:18px 8px;border-bottom:1px solid rgba(255,255,255,0.25);
+  }
+  .btn-ghost:hover{border-color:var(--amarelo);color:var(--amarelo);}
+
+  .hero-stats{
+    margin-top:80px;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+    border-top:1px solid rgba(255,255,255,0.1);
+    padding-top:32px;
+  }
+  .stat b{
+    display:block;font-size:clamp(24px,3vw,36px);font-weight:800;color:var(--branco);
+  }
+  .stat span{font-size:12px;color:var(--cinza);text-transform:uppercase;letter-spacing:1px;}
+
+  /* SECTION LABEL */
+  .section{padding:120px 0;}
+  .label{
+    font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+    color:var(--laranja);margin-bottom:16px;
+  }
+  h2{
+    font-size:clamp(30px,4vw,52px);
+    font-weight:800;letter-spacing:-1px;line-height:1.05;
+    text-transform:uppercase;max-width:820px;
+  }
+  .section-sub{
+    margin-top:20px;font-size:17px;color:#b8b6b0;max-width:600px;line-height:1.6;
+  }
+
+  /* PROMISE */
+  .promise{background:var(--preto2);}
+  .promise-grid{
+    margin-top:64px;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.08);
+  }
+  .promise-card{
+    background:var(--preto2);padding:40px 32px;
+  }
+  .promise-card .num{
+    font-size:13px;font-weight:800;color:var(--laranja);letter-spacing:1px;margin-bottom:20px;
+  }
+  .promise-card h3{font-size:20px;font-weight:700;margin-bottom:12px;letter-spacing:-0.3px;}
+  .promise-card p{font-size:14.5px;color:#a8a6a0;line-height:1.6;}
+
+  /* SERVICES */
+  .services-grid{
+    margin-top:64px;
+    display:grid;grid-template-columns:repeat(2,1fr);gap:2px;
+  }
+  .service{
+    padding:48px 40px;border:1px solid rgba(255,255,255,0.08);
+    position:relative;overflow:hidden;
+    transition:background .2s ease;
+  }
+  .service:hover{background:rgba(255,196,0,0.04);}
+  .service .tag{
+    display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.5px;
+    color:var(--preto);background:var(--amarelo);padding:5px 10px;border-radius:4px;
+    text-transform:uppercase;margin-bottom:24px;
+  }
+  .service h3{font-size:26px;font-weight:800;margin-bottom:14px;letter-spacing:-0.5px;}
+  .service p{font-size:15px;color:#b8b6b0;line-height:1.65;max-width:440px;}
+  .service ul{margin-top:18px;list-style:none;}
+  .service li{
+    font-size:13.5px;color:#8a8a8a;padding-left:18px;position:relative;margin-bottom:8px;
+  }
+  .service li::before{content:'→';position:absolute;left:0;color:var(--laranja);}
+
+  /* PROCESS */
+  .process{background:var(--preto2);}
+  .steps{margin-top:64px;display:flex;flex-direction:column;}
+  .step{
+    display:grid;grid-template-columns:100px 1fr;gap:32px;
+    padding:36px 0;border-bottom:1px solid rgba(255,255,255,0.08);
+    align-items:start;
+  }
+  .step:first-child{border-top:1px solid rgba(255,255,255,0.08);}
+  .step .n{font-size:44px;font-weight:800;color:rgba(255,255,255,0.15);letter-spacing:-1px;}
+  .step h3{font-size:21px;font-weight:700;margin-bottom:8px;}
+  .step p{font-size:14.5px;color:#a8a6a0;max-width:560px;line-height:1.6;}
+
+  /* CTA FINAL */
+  .cta-final{
+    padding:140px 0;
+    text-align:center;
+    background:linear-gradient(180deg, var(--preto) 0%, #1a1200 100%);
+    position:relative;
+  }
+  .cta-final h2{
+    margin:0 auto;font-size:clamp(34px,5.5vw,66px);max-width:820px;
+  }
+  .cta-final .section-sub{margin:24px auto 0;text-align:center;}
+  .cta-final .btn-primary{margin-top:40px;font-size:17px;padding:20px 42px;}
+
+  /* FOOTER */
+  footer{
+    padding:40px 0;border-top:1px solid rgba(255,255,255,0.08);
+  }
+  .footer-row{
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+  }
+  footer .logo{font-size:15px;}
+  footer .meta{font-size:13px;color:var(--cinza);}
+  footer a{color:var(--cinza);text-decoration:none;}
+  footer a:hover{color:var(--amarelo);}
+
+  @media (max-width:860px){
+    .promise-grid{grid-template-columns:1fr;}
+    .services-grid{grid-template-columns:1fr;}
+    .hero-stats{grid-template-columns:repeat(2,1fr);}
+    .step{grid-template-columns:60px 1fr;}
+    .section{padding:80px 0;}
+    .wrap{padding:0 20px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">WHITE <span>WINDOW</span></div>
+  <a class="nav-cta" href="https://wa.me/5548996203352?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20White%20Window%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Falar no WhatsApp</a>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">White Window · Agência de Performance</div>
+    <h1>Marketing digital<br>e <span class="accent">inteligência artificial</span></h1>
+    <p class="hero-sub">Unimos tráfego pago, conteúdo e IA aplicada para elevar a qualidade e a produtividade dos resultados da sua marca — com processo, dado e velocidade que agência tradicional não entrega.</p>
+    <div class="hero-cta-row">
+      <a class="btn-primary" href="https://wa.me/5548996203352?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20White%20Window%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Falar com a agência →</a>
+      <a class="btn-ghost" href="#servicos">Ver o que fazemos</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>+10</b><span>Marcas ativas</span></div>
+      <div class="stat"><b>2</b><span>Plataformas de Ads dominadas</span></div>
+      <div class="stat"><b>IA</b><span>Aplicada em cada etapa</span></div>
+      <div class="stat"><b>100%</b><span>Orientado a resultado</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="promise section">
+  <div class="wrap">
+    <div class="label">Por que White Window</div>
+    <h2>Agência de tráfego que virou operação de performance com IA</h2>
+    <p class="section-sub">A maioria das agências ainda entrega campanha manual, relatório atrasado e criativo genérico. A gente usa inteligência artificial em cada etapa — da pesquisa ao criativo, da otimização ao relatório — pra fazer mais, melhor, e mais rápido.</p>
+    <div class="promise-grid">
+      <div class="promise-card">
+        <div class="num">01</div>
+        <h3>Mais qualidade</h3>
+        <p>IA aplicada à pesquisa de público, criativo e copy eleva o padrão do que vai pro ar — sem depender só de tentativa e erro.</p>
+      </div>
+      <div class="promise-card">
+        <div class="num">02</div>
+        <h3>Mais produtividade</h3>
+        <p>Automatizamos o que é repetitivo — relatório, análise, otimização de lance — pra focar o time humano na estratégia que importa.</p>
+      </div>
+      <div class="promise-card">
+        <div class="num">03</div>
+        <h3>Mais resultado</h3>
+        <p>Menos achismo, mais decisão orientada a dado. Cada real investido em mídia é acompanhado de perto, todo mês.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="servicos">
+  <div class="wrap">
+    <div class="label">O que fazemos</div>
+    <h2>Marketing digital de ponta a ponta</h2>
+    <p class="section-sub">Do primeiro clique ao cliente fechado — cuidamos da estratégia, da mídia e do conteúdo, com IA embutida no processo inteiro.</p>
+    <div class="services-grid">
+      <div class="service">
+        <span class="tag">Tráfego Pago</span>
+        <h3>Meta Ads & Google Ads</h3>
+        <p>Campanhas estruturadas por funil, com verba usada onde converte — não onde parece bonito.</p>
+        <ul>
+          <li>Estratégia de funil (topo, meio, fundo)</li>
+          <li>Otimização contínua de CPR e CPA</li>
+          <li>Relatório mensal transparente</li>
+        </ul>
+      </div>
+      <div class="service">
+        <span class="tag">Inteligência Artificial</span>
+        <h3>IA aplicada ao marketing</h3>
+        <p>Automação de processos, análise de dados e geração de criativo com IA — reduzindo tempo e elevando qualidade.</p>
+        <ul>
+          <li>Automação de relatórios e análises</li>
+          <li>Geração de criativos e roteiros com IA</li>
+          <li>Agentes de atendimento e vendas</li>
+        </ul>
+      </div>
+      <div class="service">
+        <span class="tag">Conteúdo & Criativo</span>
+        <h3>Conteúdo que converte</h3>
+        <p>Roteiro, copy e design pensados pra parar o scroll e levar à ação — não só pra "postar por postar".</p>
+        <ul>
+          <li>Roteiro de vídeo curto (Reels/TikTok)</li>
+          <li>Copywriting de landing page e anúncio</li>
+          <li>Identidade visual e direção de arte</li>
+        </ul>
+      </div>
+      <div class="service">
+        <span class="tag">Web & Landing Pages</span>
+        <h3>Páginas que vendem</h3>
+        <p>Landing pages rápidas, objetivas e testadas — construídas pra converter tráfego pago em cliente.</p>
+        <ul>
+          <li>Design moderno e responsivo</li>
+          <li>Copy orientada a conversão</li>
+          <li>SEO técnico desde o primeiro dia</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process section">
+  <div class="wrap">
+    <div class="label">Como funciona</div>
+    <h2>Do diagnóstico ao resultado, sem enrolação</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="n">01</div>
+        <div>
+          <h3>Diagnóstico</h3>
+          <p>Analisamos seu negócio, concorrência e histórico de mídia pra entender onde está o maior ganho — antes de gastar o primeiro real.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <div>
+          <h3>Plano de ação</h3>
+          <p>Definimos estratégia de funil, canais prioritários e metas claras — com prazos e números, não promessas vagas.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <div>
+          <h3>Execução com IA</h3>
+          <p>Campanhas no ar, criativos testados, automações rodando. Otimização constante — não só uma vez por mês.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="n">04</div>
+        <div>
+          <h3>Relatório e evolução</h3>
+          <p>Relatório claro, sem enrolação técnica, com o que funcionou, o que não funcionou e o próximo passo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="wrap">
+    <h2>Pronto pra vender mais com marketing e IA de verdade?</h2>
+    <p class="section-sub">Fale com a gente agora e receba um diagnóstico rápido e sem compromisso.</p>
+    <a class="btn-primary" href="https://wa.me/5548996203352?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20White%20Window%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Falar com a agência no WhatsApp →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <div class="logo">WHITE <span style="color:#FFC400">WINDOW</span></div>
+    <div class="meta">Marketing Digital + Inteligência Artificial · whitewindow.com.br</div>
+    <a href="https://wa.me/5548996203352" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</footer>
+
+</body>
+</html>
