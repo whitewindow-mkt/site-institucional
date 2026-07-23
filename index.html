@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>White Window — Marketing Digital e Inteligência Artificial</title>
-<meta name="description" content="White Window: agência de marketing digital com inteligência artificial aplicada. Tráfego pago, conteúdo e automação que elevam qualidade e produtividade dos seus resultados.">
-<meta property="og:title" content="White Window — Marketing Digital e Inteligência Artificial">
-<meta property="og:description" content="Soluções de marketing digital com IA aplicada que elevam a qualidade e a produtividade dos resultados da sua marca.">
+<title>White Window — Funil de Marketing e Vendas Completo com IA</title>
+<meta name="description" content="White Window: agência que monta e opera seu funil de vendas de ponta a ponta — estratégia, branding, conteúdo com IA, Meta Ads, Google Ads, landing pages e atendimento com IA/CRM — tudo integrado.">
+<meta property="og:title" content="White Window — Do criativo ao cliente fechado, um funil só, rodando com IA">
+<meta property="og:description" content="Marketing digital e inteligência artificial aplicada: um funil de vendas completo, do criativo ao atendimento na ponta.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
@@ -149,6 +149,33 @@
   .promise-card h3{font-size:20px;font-weight:700;margin-bottom:12px;letter-spacing:-0.3px;}
   .promise-card p{font-size:14.5px;color:#a8a6a0;line-height:1.6;}
 
+  /* FLOW */
+  .flow{
+    margin-top:64px;
+    display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;
+    align-items:stretch;gap:0;
+  }
+  .flow-stage{
+    background:var(--preto2);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:32px 24px;
+    display:flex;flex-direction:column;gap:10px;
+    transition:border-color .2s ease, background .2s ease;
+  }
+  .flow-stage:hover{border-color:var(--amarelo);background:rgba(255,196,0,0.04);}
+  .flow-n{font-size:12px;font-weight:800;color:var(--laranja);letter-spacing:1px;}
+  .flow-stage h3{font-size:22px;font-weight:800;text-transform:uppercase;letter-spacing:-0.3px;}
+  .flow-stage p{font-size:13.5px;color:#a8a6a0;line-height:1.55;flex-grow:1;}
+  .flow-ia{
+    font-size:11px;font-weight:700;color:var(--amarelo);
+    text-transform:uppercase;letter-spacing:0.5px;
+    padding-top:10px;border-top:1px solid rgba(255,255,255,0.08);
+  }
+  .flow-arrow{
+    display:flex;align-items:center;justify-content:center;
+    font-size:22px;color:var(--laranja);font-weight:800;padding:0 8px;
+  }
+
   /* SERVICES */
   .services-grid{
     margin-top:64px;
@@ -218,6 +245,8 @@
     .step{grid-template-columns:60px 1fr;}
     .section{padding:80px 0;}
     .wrap{padding:0 20px;}
+    .flow{grid-template-columns:1fr;}
+    .flow-arrow{transform:rotate(90deg);padding:6px 0;}
   }
 </style>
 </head>
@@ -230,42 +259,79 @@
 
 <section class="hero">
   <div class="wrap">
-    <div class="eyebrow">White Window · Agência de Performance</div>
-    <h1>Marketing digital<br>e <span class="accent">inteligência artificial</span></h1>
-    <p class="hero-sub">Unimos tráfego pago, conteúdo e IA aplicada para elevar a qualidade e a produtividade dos resultados da sua marca — com processo, dado e velocidade que agência tradicional não entrega.</p>
+    <div class="eyebrow">White Window · Funil Completo com IA</div>
+    <h1>Do criativo ao<br>cliente <span class="accent">fechado.</span><br>Um funil só.</h1>
+    <p class="hero-sub">A gente monta e opera seu funil de marketing e vendas de ponta a ponta — do anúncio que capta o lead ao atendimento que fecha a venda no WhatsApp ou Instagram — com IA conectando cada etapa.</p>
     <div class="hero-cta-row">
-      <a class="btn-primary" href="https://wa.me/5548996203352?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20White%20Window%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Falar com a agência →</a>
-      <a class="btn-ghost" href="#servicos">Ver o que fazemos</a>
+      <a class="btn-primary" href="https://wa.me/5548996203352?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20White%20Window%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Montar meu funil →</a>
+      <a class="btn-ghost" href="#funil">Ver como funciona</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><b>+10</b><span>Marcas ativas</span></div>
-      <div class="stat"><b>2</b><span>Plataformas de Ads dominadas</span></div>
-      <div class="stat"><b>IA</b><span>Aplicada em cada etapa</span></div>
-      <div class="stat"><b>100%</b><span>Orientado a resultado</span></div>
+      <div class="stat"><b>1</b><span>Funil, ponta a ponta</span></div>
+      <div class="stat"><b>4</b><span>Etapas, uma só operação</span></div>
+      <div class="stat"><b>IA</b><span>Em cada etapa do funil</span></div>
+      <div class="stat"><b>0</b><span>Lead perdido entre etapas</span></div>
     </div>
   </div>
 </section>
 
 <section class="promise section">
   <div class="wrap">
-    <div class="label">Por que White Window</div>
-    <h2>Agência de tráfego que virou operação de performance com IA</h2>
-    <p class="section-sub">A maioria das agências ainda entrega campanha manual, relatório atrasado e criativo genérico. A gente usa inteligência artificial em cada etapa — da pesquisa ao criativo, da otimização ao relatório — pra fazer mais, melhor, e mais rápido.</p>
+    <div class="label">O problema</div>
+    <h2>Seu funil provavelmente está vazando onde ninguém está olhando</h2>
+    <p class="section-sub">Agência de tráfego cuida do anúncio e larga o lead na sua mão. Time de atendimento não sabe de onde o lead veio nem o que prometeram pra ele. Ninguém dono da venda de ponta a ponta — e é exatamente nessa costura que o dinheiro se perde.</p>
     <div class="promise-grid">
       <div class="promise-card">
         <div class="num">01</div>
-        <h3>Mais qualidade</h3>
-        <p>IA aplicada à pesquisa de público, criativo e copy eleva o padrão do que vai pro ar — sem depender só de tentativa e erro.</p>
+        <h3>Criativo sem tráfego bom</h3>
+        <p>Peça de conteúdo bonita, mas sem estratégia de mídia por trás, não vira lead — só engajamento vazio.</p>
       </div>
       <div class="promise-card">
         <div class="num">02</div>
-        <h3>Mais produtividade</h3>
-        <p>Automatizamos o que é repetitivo — relatório, análise, otimização de lance — pra focar o time humano na estratégia que importa.</p>
+        <h3>Lead sem resposta rápida</h3>
+        <p>Cada minuto sem resposta no WhatsApp derruba a chance de fechar. Atendimento manual não escala no ritmo do anúncio.</p>
       </div>
       <div class="promise-card">
         <div class="num">03</div>
-        <h3>Mais resultado</h3>
-        <p>Menos achismo, mais decisão orientada a dado. Cada real investido em mídia é acompanhado de perto, todo mês.</p>
+        <h3>Ninguém dono do funil inteiro</h3>
+        <p>Mídia, conteúdo e atendimento em times ou fornecedores separados — sem um sistema conectando as pontas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="funil">
+  <div class="wrap">
+    <div class="label">A solução</div>
+    <h2>Um funil só, com IA conectando cada etapa</h2>
+    <p class="section-sub">A gente não entrega "serviços". Entrega o funil inteiro rodando — captação, engajamento, conversa e venda — com inteligência artificial fazendo a costura entre cada etapa, pra nenhum lead esfriar no caminho.</p>
+    <div class="flow">
+      <div class="flow-stage">
+        <span class="flow-n">01</span>
+        <h3>Atrai</h3>
+        <p>Criativo + Meta Ads e Google Ads estruturados por funil, gerando lead qualificado — não só clique barato.</p>
+        <span class="flow-ia">IA na pesquisa de público e geração de criativo</span>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-stage">
+        <span class="flow-n">02</span>
+        <h3>Engaja</h3>
+        <p>Conteúdo e remarketing mantêm a marca presente até o lead estar pronto pra falar com você.</p>
+        <span class="flow-ia">IA no roteiro, copy e calendário de conteúdo</span>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-stage">
+        <span class="flow-n">03</span>
+        <h3>Converte</h3>
+        <p>Atendimento automatizado no WhatsApp e Instagram responde na hora, qualifica e agenda — sem lead esfriando.</p>
+        <span class="flow-ia">Agente de IA respondendo 24/7</span>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-stage">
+        <span class="flow-n">04</span>
+        <h3>Fecha</h3>
+        <p>Time humano entra só na hora certa, com contexto completo do lead — pra fechar, não pra qualificar do zero.</p>
+        <span class="flow-ia">IA acompanhando funil e relatório em tempo real</span>
       </div>
     </div>
   </div>
@@ -273,12 +339,22 @@
 
 <section class="section" id="servicos">
   <div class="wrap">
-    <div class="label">O que fazemos</div>
-    <h2>Marketing digital de ponta a ponta</h2>
-    <p class="section-sub">Do primeiro clique ao cliente fechado — cuidamos da estratégia, da mídia e do conteúdo, com IA embutida no processo inteiro.</p>
+    <div class="label">O que dominamos</div>
+    <h2>Cada peça do funil, sob o mesmo teto</h2>
+    <p class="section-sub">Não terceirizamos as pontas. Estratégia, criativo, mídia, conteúdo, página e atendimento são operados pelo mesmo time, com IA integrada — pra nada se perder na transição entre etapas.</p>
     <div class="services-grid">
       <div class="service">
-        <span class="tag">Tráfego Pago</span>
+        <span class="tag">Base do funil</span>
+        <h3>Estratégia & Branding</h3>
+        <p>Planejamento do funil completo e identidade de marca — a base que faz cada etapa seguinte fazer sentido junto.</p>
+        <ul>
+          <li>Estratégia e planejamento de funil</li>
+          <li>Criação de branding e identidade visual</li>
+          <li>Posicionamento e voz de marca</li>
+        </ul>
+      </div>
+      <div class="service">
+        <span class="tag">Etapa Atrai</span>
         <h3>Meta Ads & Google Ads</h3>
         <p>Campanhas estruturadas por funil, com verba usada onde converte — não onde parece bonito.</p>
         <ul>
@@ -288,33 +364,44 @@
         </ul>
       </div>
       <div class="service">
-        <span class="tag">Inteligência Artificial</span>
-        <h3>IA aplicada ao marketing</h3>
-        <p>Automação de processos, análise de dados e geração de criativo com IA — reduzindo tempo e elevando qualidade.</p>
+        <span class="tag">Etapa Engaja</span>
+        <h3>Conteúdo com IA</h3>
+        <p>Imagem, vídeo, edição, blog e e-mail marketing gerados e otimizados com IA — produção em escala sem perder qualidade.</p>
         <ul>
-          <li>Automação de relatórios e análises</li>
-          <li>Geração de criativos e roteiros com IA</li>
-          <li>Agentes de atendimento e vendas</li>
+          <li>Imagens e vídeos gerados com IA</li>
+          <li>Edição de vídeo e roteiro (Reels/TikTok)</li>
+          <li>Blog, SEO técnico e GEO (citação por IA)</li>
+          <li>Sequências de e-mail marketing</li>
         </ul>
       </div>
       <div class="service">
-        <span class="tag">Conteúdo & Criativo</span>
-        <h3>Conteúdo que converte</h3>
-        <p>Roteiro, copy e design pensados pra parar o scroll e levar à ação — não só pra "postar por postar".</p>
-        <ul>
-          <li>Roteiro de vídeo curto (Reels/TikTok)</li>
-          <li>Copywriting de landing page e anúncio</li>
-          <li>Identidade visual e direção de arte</li>
-        </ul>
-      </div>
-      <div class="service">
-        <span class="tag">Web & Landing Pages</span>
-        <h3>Páginas que vendem</h3>
-        <p>Landing pages rápidas, objetivas e testadas — construídas pra converter tráfego pago em cliente.</p>
+        <span class="tag">Etapa Converte</span>
+        <h3>Landing Pages</h3>
+        <p>Páginas rápidas, objetivas e testadas — construídas pra converter o clique da campanha em conversa.</p>
         <ul>
           <li>Design moderno e responsivo</li>
           <li>Copy orientada a conversão</li>
           <li>SEO técnico desde o primeiro dia</li>
+        </ul>
+      </div>
+      <div class="service">
+        <span class="tag">Etapa Fecha</span>
+        <h3>Agente de IA + CRM</h3>
+        <p>Atendimento automatizado no WhatsApp e Instagram, com CRM e disparos — responde, qualifica e agenda sem perder lead.</p>
+        <ul>
+          <li>Agente de atendimento 24/7</li>
+          <li>CRM com histórico completo do lead</li>
+          <li>Disparos e follow-up automático</li>
+        </ul>
+      </div>
+      <div class="service">
+        <span class="tag">Costura do funil</span>
+        <h3>IA operando de ponta a ponta</h3>
+        <p>Automação de relatório, análise de funil e otimização contínua — a IA que garante que nenhuma etapa trabalha isolada.</p>
+        <ul>
+          <li>Dashboard único do funil completo</li>
+          <li>Automação de relatórios e análises</li>
+          <li>Otimização orientada por dado</li>
         </ul>
       </div>
     </div>
@@ -324,34 +411,34 @@
 <section class="process section">
   <div class="wrap">
     <div class="label">Como funciona</div>
-    <h2>Do diagnóstico ao resultado, sem enrolação</h2>
+    <h2>Do diagnóstico ao funil no ar, sem enrolação</h2>
     <div class="steps">
       <div class="step">
         <div class="n">01</div>
         <div>
-          <h3>Diagnóstico</h3>
-          <p>Analisamos seu negócio, concorrência e histórico de mídia pra entender onde está o maior ganho — antes de gastar o primeiro real.</p>
+          <h3>Mapeamento do funil</h3>
+          <p>Analisamos onde seu funil vaza hoje — captação, conteúdo ou atendimento — antes de gastar o primeiro real em mídia.</p>
         </div>
       </div>
       <div class="step">
         <div class="n">02</div>
         <div>
-          <h3>Plano de ação</h3>
-          <p>Definimos estratégia de funil, canais prioritários e metas claras — com prazos e números, não promessas vagas.</p>
+          <h3>Desenho do funil completo</h3>
+          <p>Definimos as 4 etapas (atrai, engaja, converte, fecha), os canais certos e onde a IA entra em cada uma.</p>
         </div>
       </div>
       <div class="step">
         <div class="n">03</div>
         <div>
-          <h3>Execução com IA</h3>
-          <p>Campanhas no ar, criativos testados, automações rodando. Otimização constante — não só uma vez por mês.</p>
+          <h3>Funil no ar</h3>
+          <p>Campanhas, criativos e agente de atendimento rodando juntos — não em fornecedores separados.</p>
         </div>
       </div>
       <div class="step">
         <div class="n">04</div>
         <div>
-          <h3>Relatório e evolução</h3>
-          <p>Relatório claro, sem enrolação técnica, com o que funcionou, o que não funcionou e o próximo passo.</p>
+          <h3>Otimização contínua</h3>
+          <p>Acompanhamos o funil inteiro, etapa por etapa, e ajustamos onde o dado mostrar que está travando.</p>
         </div>
       </div>
     </div>
@@ -360,16 +447,16 @@
 
 <section class="cta-final">
   <div class="wrap">
-    <h2>Pronto pra vender mais com marketing e IA de verdade?</h2>
-    <p class="section-sub">Fale com a gente agora e receba um diagnóstico rápido e sem compromisso.</p>
-    <a class="btn-primary" href="https://wa.me/5548996203352?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20White%20Window%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Falar com a agência no WhatsApp →</a>
+    <h2>Pronto pra parar de perder lead entre uma etapa e outra?</h2>
+    <p class="section-sub">Fale com a gente agora e receba um diagnóstico rápido do seu funil, sem compromisso.</p>
+    <a class="btn-primary" href="https://wa.me/5548996203352?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20White%20Window%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Montar meu funil no WhatsApp →</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap footer-row">
     <div class="logo">WHITE <span style="color:#FFC400">WINDOW</span></div>
-    <div class="meta">Marketing Digital + Inteligência Artificial · whitewindow.com.br</div>
+    <div class="meta">Funil de Marketing e Vendas com IA · whitewindow.com.br</div>
     <a href="https://wa.me/5548996203352" target="_blank" rel="noopener">WhatsApp</a>
   </div>
 </footer>
