@@ -106,39 +106,39 @@
     min-height:100vh;
     display:flex;flex-direction:column;justify-content:center;
     position:relative;
-    padding-top:100px;padding-bottom:80px;
+    padding-top:88px;padding-bottom:32px;
     background:
       radial-gradient(ellipse 900px 500px at 85% 10%, rgba(255,106,0,0.16), transparent 60%),
       radial-gradient(ellipse 700px 500px at 10% 90%, rgba(255,196,0,0.10), transparent 60%);
   }
   .eyebrow{
     display:inline-flex;align-items:center;gap:8px;
-    font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
-    color:var(--amarelo);margin-bottom:28px;
+    font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+    color:var(--amarelo);margin-bottom:18px;
   }
   .eyebrow::before{content:'';width:8px;height:8px;background:var(--laranja);border-radius:50%;}
   h1{
-    font-size:clamp(40px, 6.4vw, 92px);
+    font-size:clamp(32px, 5vw, 68px);
     font-weight:800;
-    line-height:0.98;
-    letter-spacing:-2px;
+    line-height:1.04;
+    letter-spacing:-1.5px;
     text-transform:uppercase;
-    max-width:1000px;
+    max-width:980px;
   }
   h1 .accent{
     background:linear-gradient(90deg, var(--amarelo), var(--laranja));
     -webkit-background-clip:text;background-clip:text;color:transparent;
   }
   .hero-sub{
-    margin-top:28px;
-    font-size:clamp(16px,2vw,20px);
+    margin-top:20px;
+    font-size:clamp(14px,1.4vw,17px);
     color:#c9c7c0;
-    max-width:600px;
-    line-height:1.55;
+    max-width:620px;
+    line-height:1.5;
     font-weight:400;
   }
   .hero-cta-row{
-    margin-top:44px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;
+    margin-top:28px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;
   }
   .btn-primary{
     background:var(--amarelo);color:var(--preto);
@@ -157,15 +157,15 @@
   .btn-ghost:hover{border-color:var(--amarelo);color:var(--amarelo);}
 
   .hero-stats{
-    margin-top:80px;
-    display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+    margin-top:40px;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
     border-top:1px solid rgba(255,255,255,0.1);
-    padding-top:32px;
+    padding-top:24px;
   }
   .stat b{
-    display:block;font-size:clamp(24px,3vw,36px);font-weight:800;color:var(--branco);
+    display:block;font-size:clamp(20px,2.4vw,30px);font-weight:800;color:var(--branco);
   }
-  .stat span{font-size:12px;color:var(--cinza);text-transform:uppercase;letter-spacing:1px;}
+  .stat span{font-size:11px;color:var(--cinza);text-transform:uppercase;letter-spacing:1px;}
 
   /* SECTION LABEL */
   .section{padding:120px 0;}
@@ -321,8 +321,8 @@
 <section class="hero">
   <div class="wrap">
     <div class="eyebrow">White Window · Agência de Marketing Digital com IA</div>
-    <h1>Marketing digital<br>com <span class="accent">inteligência<br>artificial.</span><br>Pra vender mais.</h1>
-    <p class="hero-sub">Estratégia · Branding · Conteúdo · Meta Ads · Google Ads · Landing Pages · Atendimento com IA. Planejamos, implementamos e automatizamos o marketing e vendas de negócios locais — sob o mesmo teto.</p>
+    <h1>Marketing digital com<br><span class="accent">inteligência artificial.</span><br>Vende muito mais.</h1>
+    <p class="hero-sub">Estratégia · Branding · Conteúdo · Meta Ads · Google Ads · Landing Pages · Atendimento com IA — sob o mesmo teto.</p>
     <div class="hero-cta-row">
       <a class="btn-primary" href="https://wa.me/5548996203352?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20White%20Window%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Agendar diagnóstico →</a>
       <a class="btn-ghost" href="#servicos">Ver o que entregamos</a>
